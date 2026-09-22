@@ -255,19 +255,25 @@
     }
     .lunar { text-transform: none; letter-spacing: .05em; font-style: italic; white-space: nowrap; }
     .day-num {
-      font-family: "Cormorant Garamond", serif;
-      font-weight: 700;
+      font-family: "Be Vietnam Pro", system-ui, sans-serif;
+      font-weight: 600;
       color: var(--rose-deep);
       font-size: clamp(38px, 13vmin, 150px);
-      line-height: .85;
+      line-height: 1;
+      letter-spacing: .02em;
+      font-variant-numeric: lining-nums tabular-nums;
+      font-feature-settings: "lnum" 1, "tnum" 1;
     }
 
     .year {
-      font-family: "Cormorant Garamond", serif;
+      font-family: "Be Vietnam Pro", system-ui, sans-serif;
+      font-weight: 500;
       letter-spacing: .6em;
       text-indent: .6em;
       color: var(--rose);
       font-size: clamp(14px, 3.2vmin, 38px);
+      font-variant-numeric: lining-nums tabular-nums;
+      font-feature-settings: "lnum" 1, "tnum" 1;
     }
 
     /* ================= Cánh hoa rơi ================= */
