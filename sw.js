@@ -1,5 +1,5 @@
-const CACHE = "thiep-cuoi-v10";
-const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg", "./icon-192.png", "./icon-512.png", "./fonts/UTM-Edwardian.ttf"];
+const CACHE = "thiep-cuoi-v11";
+const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg", "./icon-192.png", "./icon-512.png", "./fonts/UTM-Edwardian.ttf", "./music.mp3"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)).then(() => self.skipWaiting()));

@@ -610,7 +610,7 @@
 
   <div class="toast" id="toast"></div>
 
-  <!-- Thay bằng file nhạc của bạn: đặt music.mp3 cùng thư mục -->
+  <!-- Nhạc nền violin-cover (phát đi phát lại): music.mp3 copy từ Downloads/violin-cover.mp3 -->
   <audio id="music" loop preload="auto" src="music.mp3"></audio>
 
   <script>
@@ -665,6 +665,8 @@
         opened = true;
         cover.classList.add("hidden");
         goFullscreen();
+        // Phát đi phát lại bài violin-cover
+        music.loop = true;
         if (music.getAttribute("src")) music.play().catch(() => {});
         setTimeout(() => { cover.style.display = "none"; }, 950);
         if (isIOS && !isStandalone) {
