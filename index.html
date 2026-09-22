@@ -257,8 +257,32 @@
       min-width: 0;
     }
     .weekday { justify-self: end; text-align: right; }
-    .lunar { justify-self: start; text-align: left; }
-    .lunar { text-transform: none; letter-spacing: .05em; font-style: italic; white-space: nowrap; }
+    .lunar {
+      justify-self: start;
+      text-align: left;
+      text-transform: none;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: baseline;
+      gap: .6em;
+      font-size: clamp(11px, 2.1vmin, 26px);
+      line-height: 1.3;
+      color: #8a5b66;
+      min-width: 0;
+    }
+    .lunar-num {
+      font-family: "Be Vietnam Pro", system-ui, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: .03em;
+      font-variant-numeric: lining-nums tabular-nums;
+      font-feature-settings: "lnum" 1, "tnum" 1;
+    }
+    .lunar-text {
+      font-family: "Cormorant Garamond", serif;
+      font-style: italic;
+      letter-spacing: .05em;
+    }
     .day-num {
       justify-self: center;
       text-align: center;
@@ -597,7 +621,7 @@
           <div class="date-row">
             <span class="weekday">Thứ Bảy</span>
             <span class="day-num">26</span>
-            <span class="lunar">16.08 (Bính Ngọ)</span>
+            <span class="lunar"><span class="lunar-num">16.08</span><span class="lunar-text">(Bính Ngọ)</span></span>
           </div>
 
           <p class="year">2026</p>
